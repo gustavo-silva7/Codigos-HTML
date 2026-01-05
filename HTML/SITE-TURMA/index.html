@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turma Desenvolvimento Web & Mobile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-light">
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Turma Dev Web & Mobile</h1>
+    <nav class="main-nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#alunos" class="nav-link">Alunos</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" class="btn">Tema</button>
+      <button id="toggleAlunos" class="btn">Mostrar/Esconder Alunos</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero container">
+  <h2>Bem-vindo à Turma</h2>
+  <p>Estudamos desenvolvimento web e mobile criando interfaces modernas e funcionais.</p>
+  <a class="btn" data-target="#projetos">Ver projetos</a>
+</section>
+
+<section id="sobre" class="section container">
+  <h3>Sobre a Turma</h3>
+  <p>Somos uma equipe dedicada ao estudo de HTML, CSS, JavaScript e ferramentas modernas.</p>
+  <p>
+    Uma turma dedicada ao desenvolvimento web e mobile mergulha todos os dias no fascinante quebra-cabeça da tecnologia, 
+    explorando desde os fundamentos da programação até interfaces modernas que vivem no bolso das pessoas. Entre linhas de código, 
+    desafios criativos e risadas ocasionais, o grupo aprende a transformar ideias em sites e aplicativos funcionais, 
+    ganhando confiança para construir experiências digitais que realmente façam diferença.
+  </p>
+
+</section>
+
+<section id="alunos" class="section container">
+  <h3>Nossos futuros desenvolvedores</h3>
+  <div id="alunosGrid" class="grid">
+    <div class="card">
+      <img src="imagens/frontend.png">
+      <p>Front-end</p>
+    </div>
+
+    <div class="card">
+      <img src="imagens/mobile.jpg">
+      <p>Mobile</p>
+    </div>
+
+    <div class="card">
+      <img src="imagens/backend.jpg">
+      <p>Back-end</p>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" class="section container">
+  <h3>PRINCIPAIS ATIVIDADE DA TURMA</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Atividade 1</h4>
+      <p>Criando nosso portifolio</p>
+    </div>
+
+    <div class="card">
+      <h4>Atividade 2</h4>
+      <p>Usando VISUALG</p>
+    </div>
+
+    <div class="card">
+      <h4>Atividade 3</h4>
+      <p>Progaramando em Python</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section container">
+  <h3>Contato</h3>
+  <form id="contactForm" class="form">
+    <label>Nome</label>
+    <input id="nome" required>
+
+    <label>Email</label>
+    <input id="email" type="email" required>
+
+    <label>Mensagem</label>
+    <textarea id="mensagem" rows="4" required></textarea>
+
+    <button class="btn" type="submit">Enviar</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Turma Desenvolvimento Web & Mobile</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
