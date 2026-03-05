@@ -1,0 +1,62 @@
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Tema padrão (light) */
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    }
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 24px;
+    font-family: monospace;
+    background: var(--bg);
+    color: var(--fontColor);
+    transition: background 0.3s, color 0.3s;
+}
+
+li {
+    list-style: circle;
+}
+
+
+#AlteraTema {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 50px;
+    width: 80px;
+
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#AlteraTema:hover {
+    opacity: 0.8;
+}
+
+#AlteraTema:focus {
+    outline: none;
+}
